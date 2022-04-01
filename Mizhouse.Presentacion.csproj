@@ -1,0 +1,402 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5FA2A7BC-B51F-4742-B93D-5246D11EB1FC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mizhouse.Presentacion</RootNamespace>
+    <AssemblyName>Mizhouse.Presentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44341</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="balance_administrador.aspx" />
+    <Content Include="balance_comite.aspx" />
+    <Content Include="balance_comite.html" />
+    <Content Include="balance_residente.html" />
+    <Content Include="base_incidencias_administrador.aspx" />
+    <Content Include="base_incidencias_comite.html" />
+    <Content Include="base_incidencias_residente.html" />
+    <Content Include="base_solicitudes_administardor.aspx" />
+    <Content Include="base_solicitudes_administardor.html" />
+    <Content Include="base_solicitudes_comite.html" />
+    <Content Include="cargar_personas.aspx" />
+    <Content Include="chat_administracion_comite.html" />
+    <Content Include="chat_administracion_residente.html" />
+    <Content Include="chat_comite_administrador.html" />
+    <Content Include="chat_comite_residente.html" />
+    <Content Include="chat_residente_administrador.html" />
+    <Content Include="chat_residente_comite.html" />
+    <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="consultar_edo_cuenta.html" />
+    <Content Include="consultar_hilo_incidencia.html" />
+    <Content Include="consultar_hilo_incidencia_administracion.html" />
+    <Content Include="consultar_hilo_incidencia_comite.html" />
+    <Content Include="consultar_perfil_administrador.aspx" />
+    <Content Include="consultar_perfil_comite.html" />
+    <Content Include="consultar_perfil_residente.html" />
+    <Content Include="consultar_tramite_comite.html" />
+    <Content Include="consultar_tramite_residente.html" />
+    <Content Include="crear_solicitud.html" />
+    <Content Include="css\style.css" />
+    <Content Include="css\style2.css" />
+    <Content Include="detalle_egreso_administracion.aspx" />
+    <Content Include="detalle_egreso_comite.html" />
+    <Content Include="detalle_egreso_residente.html" />
+    <Content Include="detalle_ingreso_administrador.aspx" />
+    <Content Include="detalle_ingreso_comite.html" />
+    <Content Include="detalle_ingreso_residente.html" />
+    <Content Include="editar_cuenta.aspx" />
+    <Content Include="editar_cuenta_administrador.aspx" />
+    <Content Include="editar_cuenta_comite.aspx" />
+    <Content Include="editar_perfil_superadmin.aspx" />
+    <Content Include="editar_solicitud.html" />
+    <Content Include="editar_solicitud_admin.aspx" />
+    <Content Include="editar_tramite.aspx" />
+    <Content Include="enviar_mensaje_incidencia_administracion.html" />
+    <Content Include="img\adjuntar.jpg" />
+    <Content Include="img\administracion.png" />
+    <Content Include="img\adornocurvo.png" />
+    <Content Include="img\adornocurvo1.png" />
+    <Content Include="img\adornocurvo2.png" />
+    <Content Include="img\adornocurvo3.png" />
+    <Content Include="img\adornocurvo4.png" />
+    <Content Include="img\adornocurvo5.png" />
+    <Content Include="img\adornoestrella.png" />
+    <Content Include="img\adornoestrella1.png" />
+    <Content Include="img\awa.png" />
+    <Content Include="img\balance.png" />
+    <Content Include="img\bg.jpg" />
+    <Content Include="img\cargadatos.png" />
+    <Content Include="img\checklist.png" />
+    <Content Include="img\comite.png" />
+    <Content Include="img\comunicacion.png" />
+    <Content Include="img\documento.png" />
+    <Content Include="img\estado cuenta.png" />
+    <Content Include="img\evidencia.png" />
+    <Content Include="img\gato_sin_fondo.png" />
+    <Content Include="img\incidencias.png" />
+    <Content Include="img\informes.png" />
+    <Content Include="img\logo_sin_fondo.png" />
+    <Content Include="img\perfil.png" />
+    <Content Include="img\residente.png" />
+    <Content Include="img\solicitudes.png" />
+    <Content Include="img\stonks.png" />
+    <Content Include="img\tramites.png" />
+    <Content Include="img\transferencias.png" />
+    <Content Include="img\transparencia.png" />
+    <Content Include="img\union.png" />
+    <Content Include="index.aspx" />
+    <Content Include="inicio_sesion.html" />
+    <Content Include="intro1.html" />
+    <Content Include="miembros_unidad.html" />
+    <Content Include="miembros_unidad_administrador.aspx" />
+    <Content Include="miembros_unidad_comite.html" />
+    <Content Include="miembros_unidad_superadmin.html" />
+    <Content Include="recuperar_contraseña.html" />
+    <Content Include="registro.aspx" />
+    <Content Include="solicitudes.html" />
+    <Content Include="subir_edo_cuenta.aspx" />
+    <Content Include="tramites_administrador.aspx" />
+    <Content Include="tramites_comite.html" />
+    <Content Include="tramites_residente.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="balance_administrador.aspx.cs">
+      <DependentUpon>balance_administrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="balance_administrador.aspx.designer.cs">
+      <DependentUpon>balance_administrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="balance_comite.aspx.cs">
+      <DependentUpon>balance_comite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="balance_comite.aspx.designer.cs">
+      <DependentUpon>balance_comite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="base_incidencias_administrador.aspx.cs">
+      <DependentUpon>base_incidencias_administrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="base_incidencias_administrador.aspx.designer.cs">
+      <DependentUpon>base_incidencias_administrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="base_solicitudes_administardor.aspx.cs">
+      <DependentUpon>base_solicitudes_administardor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="base_solicitudes_administardor.aspx.designer.cs">
+      <DependentUpon>base_solicitudes_administardor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cargar_personas.aspx.cs">
+      <DependentUpon>cargar_personas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cargar_personas.aspx.designer.cs">
+      <DependentUpon>cargar_personas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="consultar_perfil_administrador.aspx.cs">
+      <DependentUpon>consultar_perfil_administrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="consultar_perfil_administrador.aspx.designer.cs">
+      <DependentUpon>consultar_perfil_administrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="detalle_egreso_administracion.aspx.cs">
+      <DependentUpon>detalle_egreso_administracion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="detalle_egreso_administracion.aspx.designer.cs">
+      <DependentUpon>detalle_egreso_administracion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="detalle_ingreso_administrador.aspx.cs">
+      <DependentUpon>detalle_ingreso_administrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="detalle_ingreso_administrador.aspx.designer.cs">
+      <DependentUpon>detalle_ingreso_administrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editar_cuenta.aspx.cs">
+      <DependentUpon>editar_cuenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editar_cuenta.aspx.designer.cs">
+      <DependentUpon>editar_cuenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editar_cuenta_administrador.aspx.cs">
+      <DependentUpon>editar_cuenta_administrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editar_cuenta_administrador.aspx.designer.cs">
+      <DependentUpon>editar_cuenta_administrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editar_cuenta_comite.aspx.cs">
+      <DependentUpon>editar_cuenta_comite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editar_cuenta_comite.aspx.designer.cs">
+      <DependentUpon>editar_cuenta_comite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editar_perfil_superadmin.aspx.cs">
+      <DependentUpon>editar_perfil_superadmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editar_perfil_superadmin.aspx.designer.cs">
+      <DependentUpon>editar_perfil_superadmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editar_solicitud_admin.aspx.cs">
+      <DependentUpon>editar_solicitud_admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editar_solicitud_admin.aspx.designer.cs">
+      <DependentUpon>editar_solicitud_admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editar_tramite.aspx.cs">
+      <DependentUpon>editar_tramite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editar_tramite.aspx.designer.cs">
+      <DependentUpon>editar_tramite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="miembros_unidad_administrador.aspx.cs">
+      <DependentUpon>miembros_unidad_administrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="miembros_unidad_administrador.aspx.designer.cs">
+      <DependentUpon>miembros_unidad_administrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="registro.aspx.cs">
+      <DependentUpon>registro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="registro.aspx.designer.cs">
+      <DependentUpon>registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="subir_edo_cuenta.aspx.cs">
+      <DependentUpon>subir_edo_cuenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="subir_edo_cuenta.aspx.designer.cs">
+      <DependentUpon>subir_edo_cuenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tramites_administrador.aspx.cs">
+      <DependentUpon>tramites_administrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tramites_administrador.aspx.designer.cs">
+      <DependentUpon>tramites_administrador.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\bg.psd" />
+    <None Include="Connected Services\ServiceReference1\Service1.wsdl" />
+    <None Include="Connected Services\ServiceReference1\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference1\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference1\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <Content Include="Properties\DataSources\Mizhouse.Modelo.Balance.datasource" />
+    <Content Include="Properties\DataSources\Mizhouse.Modelo.Egreso.datasource" />
+    <Content Include="Properties\DataSources\Mizhouse.Modelo.Estado_Cuenta.datasource" />
+    <Content Include="Properties\DataSources\Mizhouse.Modelo.Incidencia.datasource" />
+    <Content Include="Properties\DataSources\Mizhouse.Modelo.Ingreso.datasource" />
+    <Content Include="Properties\DataSources\Mizhouse.Modelo.Mensaje.datasource" />
+    <Content Include="Properties\DataSources\Mizhouse.Modelo.Tramite.datasource" />
+    <Content Include="Properties\DataSources\Mizhouse.Modelo.Usuario.datasource" />
+    <Content Include="Properties\DataSources\Mizhouse.Modelo.Solicitud_Egreso.datasource" />
+    <None Include="Properties\PublishProfiles\mizhouseapp - Web Deploy.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\00.Comunes\Mizhouse.Comunes.Storage\Mizhouse.Comunes.Storage.csproj">
+      <Project>{95AB018C-C9EE-488B-8C97-A355D231FCA0}</Project>
+      <Name>Mizhouse.Comunes.Storage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\00.Comunes\Mizhouse.Comunes.Util\Mizhouse.Comunes.Util.csproj">
+      <Project>{780175EC-D123-4EB2-B76C-944F0C7DE521}</Project>
+      <Name>Mizhouse.Comunes.Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\01.Modelo\Mizhouse.Modelo\Mizhouse.Modelo.csproj">
+      <Project>{54CC6372-67C9-40CF-A541-77211492F801}</Project>
+      <Name>Mizhouse.Modelo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\02.Repositorio\Mizhouse.Repositorio\Mizhouse.Repositorio.csproj">
+      <Project>{EB8C7A3E-697A-4A31-897A-1013A683F960}</Project>
+      <Name>Mizhouse.Repositorio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54197</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44341/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
